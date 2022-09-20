@@ -1,0 +1,7 @@
+project: rnix-parser
+target: parser
+
+cmds:
+  - cmd: /parser
+  - cmd: /parser_no_inst @@
+    libfuzzer: false
