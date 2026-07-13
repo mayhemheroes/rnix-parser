@@ -1,0 +1,10 @@
+project: rnix-parser
+target: lexer
+
+cmds:
+  - cmd: /mayhem/lexer
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lexer/testsuite
